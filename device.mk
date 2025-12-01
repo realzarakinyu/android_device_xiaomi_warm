@@ -14,6 +14,13 @@ $(call inherit-product, vendor/xiaomi/warm/warm-vendor.mk)
 TARGET_SCREEN_HEIGHT := 1640
 TARGET_SCREEN_WIDTH := 720
 
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    FrameworksResWarm \
+    SettingsOverlayWarm \
+    SystemUIResWarm
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
