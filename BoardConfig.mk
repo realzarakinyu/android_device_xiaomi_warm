@@ -16,4 +16,5 @@ include device/xiaomi/sm4635-commons/BoardConfigCommon.mk
 TARGET_OTA_ASSERT_DEVICE := warm
 
 # Inherit from the proprietary version
--include vendor/xiaomi/warm/BoardConfigVendor.mk
+
+include vendor/xiaomi/warm/BoardConfigVendor.mk
