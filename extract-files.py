@@ -20,7 +20,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/sm4635-common',
+    'device/xiaomi/warm',
     'hardware/qcom-caf/wlan',
     'hardware/qcom-caf/sm8650',
     'hardware/xiaomi',
@@ -30,12 +30,15 @@ namespace_imports = [
     'vendor/qcom/opensource/dataservices',
 ]
 
+def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
+    return f'{lib}-{partition}' if partition == 'vendor' else None
+
 lib_fixups: lib_fixups_user_type = {
-    libs_proto_3_9_1: lib_fixup_vendorcompat,
+    **lib_fixups,
 }
 
 blob_fixups: blob_fixups_user_type = {
-}
+}  # fmt: skip
 
 module = ExtractUtilsModule(
     'warm',
