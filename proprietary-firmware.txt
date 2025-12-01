@@ -1,0 +1,19 @@
+## All proprietary files from this list, unless pinned and noted otherwise,
+## are from POCO C75 5G/REDMI A4 5G (OS2.0.203.0.VGVINXM). 
+
+abl.img;AB
+bluetooth.img;AB
+countrycode.img;AB
+devcfg.img;AB
+dsp.img;AB
+featenabler.img;AB
+hyp.img;AB
+imagefv.img;AB
+keymaster.img;AB
+modem.img;AB
+qupfw.img;AB
+rpm.img;AB
+tz.img;AB
+uefisecapp.img;AB
+xbl.img;AB
+xbl_config.img;AB
