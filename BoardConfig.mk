@@ -15,6 +15,9 @@ include device/xiaomi/sm4635-commons/BoardConfigCommon.mk
 # OTA
 TARGET_OTA_ASSERT_DEVICE := warm
 
+# Properties
+TARGET_ODM_PROP += $(COMMON_PATH)/configs/properties/odm.prop
+
 # Inherit from the proprietary version
 
 include vendor/xiaomi/warm/BoardConfigVendor.mk

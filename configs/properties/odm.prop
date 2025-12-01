@@ -1,0 +1,8 @@
+# Bluetooth
+bluetooth.device.default_name=Poco C75 5G
+
+# Marketname
+ro.product.marketname=Poco C75 5G
+
+# USB
+vendor.usb.product_string=Poco C75 5G
