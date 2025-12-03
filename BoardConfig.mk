@@ -18,5 +18,4 @@ TARGET_OTA_ASSERT_DEVICE := warm
 TARGET_ODM_PROP += $(COMMON_PATH)/configs/properties/odm.prop
 
 # Inherit from the proprietary version
-
 include vendor/xiaomi/warm/BoardConfigVendor.mk
